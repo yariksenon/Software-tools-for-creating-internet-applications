@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "3 ПсиП",
+			"path": "../.."
+		},
+		{
+			"name": "ЛР 5",
+			"path": "../../../../../../Desktop/ЛР 5"
+		},
+		{
+			"name": "ЛР 6",
+			"path": "../../../../../../Desktop/ЛР 6"
+		},
+		{
+			"name": "ЛР 7",
+			"path": "../../../../../../Desktop/ЛР 7"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "3 ПсиП"
+	}
+}

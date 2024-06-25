@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Open Sans", sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h1_top{
+    font-weight: bold;
+}
+.p_size{
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.div_form{
+    display: flex;
+}
+.red{
+    color: red;
+    display: inline;
+}
+
+form{
+    border: 2px dashed grey;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 10px;
+    margin-left: 10px;
+}
+.first,
+.second{
+    display: flex;
+    align-items: center;
+}
+
+.first p{
+    margin-left: 5px;
+    padding-top: 15px;
+}
+.second p{
+    margin-left: 5px;
+    padding-top: 15px;
+}
+.dispfl{
+    display: flex;
+    align-items: center;
+}
+.bold{
+    font-weight: 700;
+}
+
+input[type="number"],
+[type="text"],
+[type="tel"],
+[type="email"]{
+    width: 60%;
+    height: 40px;
+    background-color: antiquewhite;
+    border: 1px solid rgb(149, 139, 127);
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 20px;
+    border: none;
+    box-shadow: -2px 2px 3px rgb(106, 92, 92);
+}
+select{
+    width: 20%;
+    height: 40px;
+    background-color: antiquewhite;
+    border: none;
+    box-shadow: -2px 2px 3px rgb(106, 92, 92);
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.inp{
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 20%;
+    height: 30px;
+}
+a{
+    text-decoration: underline;
+}
+.kod{
+    font-weight: 700;
+
+}
+
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    border: 1px solid grey;
+    margin-top: 20px;
+    width: 40%;
+}
+
+.center{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imge_disp{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    width: 150px;
+    height: 100%;
+}
+
+.two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check{
+    width: 20px;
+    height: 20px;
+}
+.est{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.disp-fl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fon{
+    font-weight: 700;
+}
+.gr{
+    color: gray;
+    margin-left: 15px;
+    text-decoration: line-through;
+}
+
+.flexx{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.btt{
+    width: 40%;
+    display: flex;
+}
+
+.form-contro{
+    background-color: rgb(218, 215, 215);
+    border-radius: 0%;
+    box-shadow: none;
+    border: 1px solid gray;
+}
+
+#minus,
+#plus{
+    border: 1px  solid grey;
+    border-radius: 0;
+    width: 25%;
+    align-items: center;
+    text-align: center ;
+}
+#calc{
+    width: 25%;
+    font-size: 20px;
+    text-align: left;
+}
+
+#minus{
+    border-right: 0;
+}
+
+#plus{
+    border-left: 0;
+}
+
+input[id="calc" i]{
+    width: 20%;
+}
+
+.buut{
+    width: 30%;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+}
+.ace{
+    margin-right: 20px;
+    width: 8%;
+}
+
+.fsfs{
+    width: 30%;
+}
+
+.photo{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: 350px;
+    background-image: url('fotoramka-v-forme-serdca-dlya-11-fotografij-chyornyj.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 50px;
+}
+
+@media screen and (max-width: 950px) {
+    .photo{
+        height: 250px;
+    }
+    .h333{
+        font-size: 20px;
+    }
+    .flexx{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .btt{
+        width: 50%;
+        font-size: 10px;
+    }
+    .buut{
+        width: 50%;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .photo{
+        height: 200px;
+    }
+    .image {
+        width: 100px;
+        height: 100%;
+    }
+    .fon{
+        font-size: 20px;
+    }
+    .ace{
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .photo{
+        height: 150px;
+    }
+    .h333{
+        font-size: 16px;
+    }
+    .image {
+        width: 50px;
+        height: 100%;
+    }
+    .fon{
+        font-size: 16px;
+    }
+    .ace{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .photo{
+        height: 100px;
+    }
+    .dispfl{
+        display: inline;
+        align-items: center;
+    }
+    .divv{
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,45 @@
+body{
+    background: rgb(227, 227, 133);
+}
+.center{
+    text-align: center;
+}
+.TText{
+    color: black;
+    font-size: 20px;
+}
+.button{
+    max-width: 100px;
+    margin: auto;
+    display: block;
+}
+.text2{
+    color: rgb(215, 86, 125);
+    font-style: italic;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.table{
+    color: white;
+    background-color: darkgreen;
+    border-color: yellow;
+    border-style: double;
+}
+
+.form_auth_block{
+    border: 6px solid rgb(0, 255, 89);
+    width: 200px;
+    height: 180px;
+}
+.circle-image{
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+  }
+  .circle-image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+  }

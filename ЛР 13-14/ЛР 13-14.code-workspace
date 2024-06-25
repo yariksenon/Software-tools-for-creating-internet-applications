@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../ЛР 8/Карточка товара"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ЛР 13-14"
+	}
+}

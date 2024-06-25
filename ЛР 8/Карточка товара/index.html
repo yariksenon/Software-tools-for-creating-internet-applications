@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Карточка</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://bootstraptema.ru/plugins/2015/b-v3-3-6/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1 class="h1_top">Анкета регистрации участника программы<br>"пРИГЛАшаем"</h1><br>
+            <p class="p_size">После регистрации Вы сможете обменивать накопленные бонусы на скидки при совершении покупок в аптеках сети "Ригла"</p>    
+            <br>
+            <div class="div_form">
+                <p class="bold">Введите штрих-код Вашей карты<span class="red">*</span>:</p>
+            </div>
+            <input type="number" id="barcode" required minlength="5" maxlength="12" title="Штрих-код должен быть от 5 до 12 цифр.">
+            <span class="error-message"></span>
+            <br><br>
+            <div class="div_form">
+                <p class="bold">Имя<span class="red">*</span>:</p>
+            </div>
+            <input type="text" id="name" required minlength="2" maxlength="50" title="Имя должно быть от 2 до 50 символов.">
+            <span class="error-message"></span>
+            <br><br>
+            <p class="bold">Отчество:</p>
+            <input type="text" id="middlename" maxlength="50" title="Отчество не должно превышать 50 символов.">
+            <span class="error-message"></span>
+            <br><br>
+            <div class="div_form">
+                <p class="bold">Дата рождения<span class="red">*</span>:</p>
+            </div>
+            <input type="date" id="birthdate" required title="Введите корректную дату рождения.">
+            <span class="error-message"></span>
+            <br><br>
+            <div class="div_form">
+                <p class="bold">Пол<span class="red">*</span>:</p>
+            </div>
+            <select id="gender" required title="Выберите ваш пол.">
+                <option label=" " selected disabled hidden> </option>
+                <option label="Мужской" value="Мужской">Мужской</option>
+                <option label="Женский" value="Женский">Женский</option>
+                <option label="Неопределённый" value="Неопределённый">Неопределённый</option>
+            </select>
+            <span class="error-message"></span>
+            <br><br>
+            <div class="div_form">
+                <p class="bold">Мобильный телефон<span class="red">*</span>:</p>
+            </div>
+            <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required title="Телефон должен быть в формате XXX-XXX-XXXX.">
+            <span class="error-message"></span>
+            <br><br>
+            <div class="div_form">
+                <p class="bold">E-mail<span class="red">*</span>:</p>
+            </div>
+            <input type="email" id="email" required title="Введите корректный email.">
+            <span class="error-message"></span>
+            <br><br>
+            <p class="bold"><span class="red">*</span> Поля, обязательные для заполнения</p>
+            <br>
+        
+            <form>
+                <div class="first">
+                    <input type="radio" name="promotion" checked><p>Я желаю получать информацию об акциях программы, скидках и распродажах</p>
+                </div>
+                <br>
+                <div class="second">
+                    <input type="radio" name="promotion"><p>Я не желаю получать информацию об акциях программы</p>
+                </div>
+            </form>
+            <br><br>
+            <div class="dispfl">
+                <p class="kod" style="margin-left: 3%; padding-top: 10px;">Код подтверждения<span class="red">*</span>:</p>
+                <input type="text" class="inp" id="confirmation_code" required minlength="6" maxlength="6" title="Код подтверждения должен быть из 6 символов.">
+                <span class="error-message"></span>
+                <a href="">Выслать SMS еще раз</a>
+            </div>
+            <br>
+            <div class="divv" style="display: flex; align-items: center;">
+                <input type="checkbox" name="agreement" id="DADA" required style="width: 20px; height: 20px;"><span style="margin-left: 1%;">Я согласен на обработку персональных данных и ознакомлен с <a href="">правами программы</a><br></span>
+            </div>
+            <br><br>
+            <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+                <button type="button" id="submit_button" style="color: white; background-color: rgb(7, 186, 7); border-radius: 20px; border: none; width: 35%; height: 40px; font-weight: 700;">Проверить</button>
+            </div>
+        </div>
+        
+        <style>
+            .error-message {
+                color: red;
+                font-size: 12px;
+                display: none;
+            }
+            input:invalid {
+                border-color: red;
+            }
+            input:valid {
+                border-color: green;
+            }
+            select:invalid {
+                border-color: red;
+            }
+            select:valid {
+                border-color: green;
+            }
+        </style>
+
+        <div class="card">
+
+
+            <div class="photo">
+                <img src="Акция.png" alt="Акция" class="fsfs" style="cursor: pointer;">
+                <img src="free-icon-heart-shape-outline-25424.png" alt="Туз" class="ace" style="margin-top: 2%; cursor: pointer;">
+            </div>
+
+           <div class="center"><h3 class="h333">Фоторамка сердцу большая<br>белая</h3></div>
+
+            <div class="imge_disp"><img src="chrome_moGFnBKwUl.png" alt="Отзывы" class="image"></div>
+
+            <div class="two">
+                <svg class="check" fill="#40C057" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="500px"><path d="M 41.9375 8.625 C 41.273438 8.648438 40.664063 9 40.3125 9.5625 L 21.5 38.34375 L 9.3125 27.8125 C 8.789063 27.269531 8.003906 27.066406 7.28125 27.292969 C 6.5625 27.515625 6.027344 28.125 5.902344 28.867188 C 5.777344 29.613281 6.078125 30.363281 6.6875 30.8125 L 20.625 42.875 C 21.0625 43.246094 21.640625 43.410156 22.207031 43.328125 C 22.777344 43.242188 23.28125 42.917969 23.59375 42.4375 L 43.6875 11.75 C 44.117188 11.121094 44.152344 10.308594 43.78125 9.644531 C 43.410156 8.984375 42.695313 8.589844 41.9375 8.625 Z"/></svg><p class="est">Есть в наличии</p>
+            </div>
+            <div class="disp-fl">
+                <h2 class="red fon">29.90 руб.</h2> 
+                <h2 class="gr fon">45.90</h2>
+            </div>
+
+            <div class="flexx">
+                <script src="https://bootstraptema.ru/plugins/jquery/jquery-1.11.3.min.js"></script>
+
+                <div class="btt">
+                    <button id="minus" class="btn" type="button">-</button>
+                    <input id="calc" type="text" class="form-contro" value="1" >
+                    <button id="plus" class="btn " type="button">+</button>
+                </div>
+
+                <script>
+                $('#minus').click(function(){
+                $("#calc").val(parseInt($("#calc").val())-1);
+                });
+                $('#plus').click(function(){
+                $("#calc").val(parseInt($("#calc").val())+1);
+                }); 
+                </script>
+
+                <button class="buut">В корзину</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="5_zad.js"></script>
+</html>
